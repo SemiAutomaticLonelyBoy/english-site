@@ -30,6 +30,7 @@ function loadYandexMapsScript(apiKey: string): Promise<void> {
 
   if (!scriptLoadingPromise) {
     scriptLoadingPromise = new Promise((resolve, reject) => {
+      console.log(`https://api-maps.yandex.ru/v3/?apikey=${apiKey}&lang=ru_RU`)
       const script = document.createElement('script');
       script.src = `https://api-maps.yandex.ru/v3/?apikey=${apiKey}&lang=ru_RU`;
       script.async = true;
