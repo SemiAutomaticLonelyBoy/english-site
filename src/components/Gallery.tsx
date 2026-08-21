@@ -214,7 +214,7 @@ const Gallery: React.FC = () => {
         {items.map((item, i) => (
           <button
             className="gallery-thumb"
-            key={i}
+            key={`${activeTab}-${i}`}
             onClick={() => setLightboxIndex(i)}
             aria-label={item.alt}
           >
