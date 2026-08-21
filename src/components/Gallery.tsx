@@ -221,6 +221,7 @@ const Gallery: React.FC = () => {
             <img
               src={item.type === 'photo' ? item.src : item.poster}
               alt={item.alt}
+              loading="lazy"
             />
             {item.type === 'video' && (
               <span className="gallery-play-icon" aria-hidden="true" />
