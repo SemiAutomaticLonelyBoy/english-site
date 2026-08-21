@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import heroImage from '../assets/hero-book-flag.jpg';
 import remoteImage1 from '../assets/gallery/remote/1.jpg'
 import remoteImage2 from '../assets/gallery/remote/2.jpg'
 import remoteImage3 from '../assets/gallery/remote/3.jpg'
@@ -215,13 +214,14 @@ const Gallery: React.FC = () => {
         {items.map((item, i) => (
           <button
             className="gallery-thumb"
-            key={i}
+            key={`${activeTab}-${i}`}
             onClick={() => setLightboxIndex(i)}
             aria-label={item.alt}
           >
             <img
               src={item.type === 'photo' ? item.src : item.poster}
               alt={item.alt}
+              loading="lazy"
             />
             {item.type === 'video' && (
               <span className="gallery-play-icon" aria-hidden="true" />
