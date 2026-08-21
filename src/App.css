@@ -342,13 +342,15 @@ body {
 /* ---- Pricing section ---- */
 
 .pricing {
-  padding: clamp(18px, 3vw, 30px) clamp(20px, 4vw, 48px);
+  padding: clamp(14px, 2.5vw, 24px) clamp(20px, 4vw, 48px);
 }
 
 .pricing-inner {
   max-width: 1600px;
   margin: 0 auto;
   text-align: center;
+  border-top: 1px solid var(--line);
+  padding-top: clamp(14px, 2.5vw, 22px);
 }
 
 .pricing-grid {
@@ -803,13 +805,15 @@ body {
 /* ---- Contact / schedule / map section ---- */
 
 .contact {
-  padding: clamp(18px, 3vw, 30px) clamp(20px, 4vw, 48px);
+  padding: clamp(14px, 2.5vw, 24px) clamp(20px, 4vw, 48px);
 }
 
 .contact-inner {
   max-width: 1600px;
   margin: 0 auto;
   text-align: center;
+  border-top: 1px solid var(--line);
+  padding-top: clamp(14px, 2.5vw, 22px);
 }
 
 .contact-lead {
